@@ -1,0 +1,15 @@
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Android
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+
+# iOS (xcodegen generate yaratadi)
+ios/*.xcodeproj/
+ios/App/Info.plist
+ios/Keyboard/Info.plist

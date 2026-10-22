@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="keyboard_bg">#FFD1D4DA</color>
+    <color name="key_bg">#FFFFFFFF</color>
+    <color name="key_special_bg">#FFADB3BC</color>
+    <color name="key_text">#FF000000</color>
+</resources>

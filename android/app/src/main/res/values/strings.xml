@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Oʻzbek klaviatura</string>
+    <string name="ime_name">Oʻzbek (yangi lotin)</string>
+    <string name="space_label">Oʻzbek</string>
+    <string name="setup_text">1. «Yoqish» tugmasini bosing va «Oʻzbek (yangi lotin)» klaviaturasini yoqing.\n2. «Tanlash» tugmasi orqali uni joriy klaviatura qiling.\n3. Pastdagi maydonda sinab koʻring.</string>
+    <string name="setup_enable">Yoqish</string>
+    <string name="setup_choose">Tanlash</string>
+    <string name="setup_try">Shu yerda sinab koʻring</string>
+</resources>

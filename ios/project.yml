@@ -1,0 +1,47 @@
+# Xcode loyihasini yaratish: brew install xcodegen && xcodegen generate
+name: UzYangi
+options:
+  bundleIdPrefix: uz.yangi
+  deploymentTarget:
+    iOS: "15.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: ""  # Apple Developer Team ID
+    TARGETED_DEVICE_FAMILY: "1,2"
+targets:
+  UzYangi:
+    type: application
+    platform: iOS
+    sources: [App]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: uz.yangi.keyboard
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Oʻzbek klaviatura
+        UILaunchScreen: {}
+    dependencies:
+      - target: UzYangiKeyboard
+  UzYangiKeyboard:
+    type: app-extension
+    platform: iOS
+    sources: [Keyboard]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: uz.yangi.keyboard.ext
+    info:
+      path: Keyboard/Info.plist
+      properties:
+        CFBundleDisplayName: Oʻzbek (yangi lotin)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.keyboard-service
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).KeyboardViewController
+          NSExtensionAttributes:
+            IsASCIICapable: false
+            PrefersRightToLeft: false
+            PrimaryLanguage: uz-Latn
+            RequestsOpenAccess: false
