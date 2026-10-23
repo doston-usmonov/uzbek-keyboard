@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: macos-15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: XcodeGen
         run: brew install xcodegen
@@ -38,7 +38,7 @@ jobs:
           cp -R UzYangi.app Payload/
           zip -qr uz_yangi_unsigned.ipa Payload
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         with:
           name: uz_yangi_unsigned_ipa
           path: ios/build/Release-iphoneos/uz_yangi_unsigned.ipa
