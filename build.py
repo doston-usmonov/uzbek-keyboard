@@ -76,7 +76,8 @@ KEYS = [
     (0x56, "OEM_102", "LSGT", False, ["\\", "|", NONE, NONE]),
 ]
 
-LAYOUT_NAME = "O'zbek (yangi lotin, 2026)"
+# MSKLC tavsifda ' va " belgilarini qabul qilmaydi, shuning uchun ʻ (U+02BB).
+LAYOUT_NAME = "Oʻzbek (yangi lotin, 2026)"
 
 # ---------------------------------------------------------------- Windows ---
 

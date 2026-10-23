@@ -1,10 +1,26 @@
 # O'zbek (yangi lotin, 2026) klaviatura tartibi
 
+[![Oxirgi reliz](https://img.shields.io/github/v/release/doston-usmonov/uzbek-keyboard?label=reliz)](https://github.com/doston-usmonov/uzbek-keyboard/releases/latest)
+
 2026-yil 21-oktyabrdagi O'RQ-1184 qonuni bilan tasdiqlangan yangi alifbo uchun klaviatura tartibi.
 Alifbo: **A B Ç D E F G Ğ H I J K L M N O Ö P Q R S Ş T U V X Y Z** va tutuq belgisi **ʼ**.
 
 Asos sifatida US QWERTY olingan, shuning uchun lotin harflari (C va W ham) odatdagi joyida.
 Yangi harflar alohida tugmalarda turadi, AltGr bilan ham yozish mumkin.
+
+## Yuklab olish
+
+Barcha fayllar [oxirgi relizda](https://github.com/doston-usmonov/uzbek-keyboard/releases/latest), avvalgi versiyalar esa [relizlar sahifasida](https://github.com/doston-usmonov/uzbek-keyboard/releases).
+
+| Tizim | Fayl | O'rnatish |
+|---|---|---|
+| Windows | [uz_yangi_windows.zip](https://github.com/doston-usmonov/uzbek-keyboard/releases/latest/download/uz_yangi_windows.zip) | Arxivni oching va `setup.exe` ni ishga tushiring |
+| macOS | [uz_yangi.keylayout](https://github.com/doston-usmonov/uzbek-keyboard/releases/latest/download/uz_yangi.keylayout) | [macOS](#macos) |
+| Linux | [uz_yangi](https://github.com/doston-usmonov/uzbek-keyboard/releases/latest/download/uz_yangi) | [Linux (X11)](#linux-x11) |
+| Android | [uz_yangi.apk](https://github.com/doston-usmonov/uzbek-keyboard/releases/latest/download/uz_yangi.apk) | [Android](#android) |
+| iOS | — | Manba koddan yig'iladi: [iOS](#ios) |
+
+APK'ni o'rnatish uchun telefonda noma'lum manbalardan ilova o'rnatishga ruxsat berish kerak bo'ladi.
 
 ## Tartib
 
@@ -56,11 +72,27 @@ Caps Lock yangi harflarga ham ta'sir qiladi.
 
 ### Windows
 
+1. [uz_yangi_windows.zip](https://github.com/doston-usmonov/uzbek-keyboard/releases/latest/download/uz_yangi_windows.zip) ni yuklab oling, arxivni oching va `setup.exe` ni ishga tushiring.
+2. Kompyuterni qayta ishga tushiring (**Restart**).
+3. **Win+Space** bilan **Uzbek (Latin)** ga o'ting. Agar bu til ro'yxatda bo'lmasa, uni **Settings → Time & language → Language & region** bo'limida qo'shing.
+
+Qayta ishga tushirmasdan ishlatish uchun PowerShell'da quyidagi buyruqni bajaring, keyin ochiq dasturlarni yopib, qayta oching:
+
+```powershell
+Stop-Process -Name ctfmon -Force; Start-Process C:\Windows\System32\ctfmon.exe
+```
+
+Busiz Windows yangi tartibga o'tmay qotib qoladi va eski tilga qaytadi.
+
+Ro'yxatda tartib "Oʻzbek (yangi lotin, 2026)" emas, "Uzbek (Latin)" deb ko'rinadi: tilda bitta tartib bo'lsa, Windows til nomini ko'rsatadi.
+
+O'rnatish fayllarini o'zingiz yig'moqchi bo'lsangiz:
+
 1. Microsoft saytidan **Microsoft Keyboard Layout Creator 1.4** (MSKLC) ni yuklab, o'rnating.
 2. MSKLC'da **File → Load Source File** orqali `dist/windows/uz_yangi.klc` ni oching.
-3. **Project → Build DLL and Setup Package** ni bosing.
-4. Yaratilgan papkadagi `setup.exe` ni ishga tushiring, so'ng tizimdan chiqib qayta kiring.
-5. **Settings → Time & language → Language & region** bo'limida O'zbek (lotin) tiliga "O'zbek (yangi lotin, 2026)" tartibini qo'shing.
+3. **Project → Build DLL and Setup Package** ni bosing. Paket `Documents\uzyangi\` papkasiga tushadi.
+
+**Validate Layout** chiqaradigan "already defined more than once" va "not in the default system code page" ogohlantirishlari xavfsiz. Ba'zi harflar ataylab ikki joyda turibdi (masalan, ş `;` tugmasida ham, AltGr+S da ham).
 
 ### Linux (X11)
 
@@ -87,7 +119,7 @@ cp dist/macos/uz_yangi.keylayout ~/Library/Keyboard\ Layouts/
 
 1. Tizimdan chiqib qayta kiring.
 2. **System Settings → Keyboard → Text Input → Edit… → +** ni bosing.
-3. **Others** bo'limidan "O'zbek (yangi lotin, 2026)" ni tanlang.
+3. **Others** bo'limidan "Oʻzbek (yangi lotin, 2026)" ni tanlang.
 
 Cmd va Ctrl bilan ishlaydigan qisqa yo'llar US tartibidagidek qoladi: masalan, `Cmd+[` "orqaga" vazifasini bajaraveradi.
 

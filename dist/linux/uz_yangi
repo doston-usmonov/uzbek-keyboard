@@ -1,8 +1,8 @@
-// O'zbek (yangi lotin, 2026) -- build.py tomonidan yaratilgan, qo'lda tahrirlamang.
+// Oʻzbek (yangi lotin, 2026) -- build.py tomonidan yaratilgan, qo'lda tahrirlamang.
 default partial alphanumeric_keys
 xkb_symbols "basic" {
     include "us(basic)"
-    name[Group1] = "O'zbek (yangi lotin, 2026)";
+    name[Group1] = "Oʻzbek (yangi lotin, 2026)";
 
     key <TLDE> { [ U02BC, apostrophe, grave, asciitilde ] };
     key <AE01> { [ 1, exclam, NoSymbol, NoSymbol ] };

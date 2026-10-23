@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!-- build.py tomonidan yaratilgan, qo'lda tahrirlamang. -->
-<keyboard group="126" id="-24026" name="O'zbek (yangi lotin, 2026)" maxout="1">
+<keyboard group="126" id="-24026" name="Oʻzbek (yangi lotin, 2026)" maxout="1">
 	<layouts>
 		<layout first="0" last="0" modifiers="Modifiers" mapSet="ANSI"/>
 	</layouts>
