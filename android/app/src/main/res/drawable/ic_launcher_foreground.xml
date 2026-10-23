@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Klaviatura: oq korpus, ichida tugmalar va probel. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M28,38h52a4,4 0,0 1,4 4v24a4,4 0,0 1,-4 4h-52a4,4 0,0 1,-4 -4v-24a4,4 0,0 1,4 -4z
+            M27,42h6v6h-6z M35,42h6v6h-6z M43,42h6v6h-6z M51,42h6v6h-6z M59,42h6v6h-6z M67,42h6v6h-6z M75,42h6v6h-6z
+            M27,51h6v6h-6z M35,51h6v6h-6z M43,51h6v6h-6z M51,51h6v6h-6z M59,51h6v6h-6z M67,51h6v6h-6z M75,51h6v6h-6z
+            M35,60h38v5h-38z" />
+</vector>

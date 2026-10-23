@@ -4,4 +4,5 @@
     <color name="key_bg">#FFFFFFFF</color>
     <color name="key_special_bg">#FFADB3BC</color>
     <color name="key_text">#FF000000</color>
+    <color name="ic_launcher_bg">#FF1E6FD9</color>
 </resources>
