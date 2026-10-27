@@ -135,7 +135,7 @@
 		<keyMap index="1">
 			<key code="50" output="&#x0027;"/>
 			<key code="18" output="&#x0021;"/>
-			<key code="19" output="&#x0022;"/>
+			<key code="19" output="&#x0040;"/>
 			<key code="20" output="&#x0023;"/>
 			<key code="21" output="&#x0024;"/>
 			<key code="23" output="&#x0025;"/>
@@ -334,7 +334,7 @@
 		</keyMap>
 		<keyMap index="3">
 			<key code="50" output="&#x0060;"/>
-			<key code="19" output="&#x0040;"/>
+			<key code="19" output="&#x0022;"/>
 			<key code="20" output="&#x2116;"/>
 			<key code="25" output="&#x00AB;"/>
 			<key code="29" output="&#x00BB;"/>
@@ -465,7 +465,7 @@
 		</keyMap>
 		<keyMap index="5">
 			<key code="50" output="&#x0060;"/>
-			<key code="19" output="&#x0040;"/>
+			<key code="19" output="&#x0022;"/>
 			<key code="20" output="&#x2116;"/>
 			<key code="25" output="&#x00AB;"/>
 			<key code="29" output="&#x00BB;"/>

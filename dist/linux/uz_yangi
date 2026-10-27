@@ -6,7 +6,7 @@ xkb_symbols "basic" {
 
     key <TLDE> { [ U02BC, apostrophe, grave, asciitilde ] };
     key <AE01> { [ 1, exclam, NoSymbol, NoSymbol ] };
-    key <AE02> { [ 2, quotedbl, at, NoSymbol ] };
+    key <AE02> { [ 2, at, quotedbl, NoSymbol ] };
     key <AE03> { [ 3, numbersign, numerosign, NoSymbol ] };
     key <AE04> { [ 4, dollar, NoSymbol, NoSymbol ] };
     key <AE05> { [ 5, percent, NoSymbol, NoSymbol ] };

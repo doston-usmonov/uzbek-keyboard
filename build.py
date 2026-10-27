@@ -25,7 +25,7 @@ KEYS = [
     # --- Raqamlar qatori ---
     (0x29, "OEM_3", "TLDE", False, ["ʼ", "'", "`", "~"]),
     (0x02, "1", "AE01", False, ["1", "!", NONE, NONE]),
-    (0x03, "2", "AE02", False, ["2", '"', "@", NONE]),
+    (0x03, "2", "AE02", False, ["2", "@", '"', NONE]),
     (0x04, "3", "AE03", False, ["3", "#", "№", NONE]),
     (0x05, "4", "AE04", False, ["4", "$", NONE, NONE]),
     (0x06, "5", "AE05", False, ["5", "%", NONE, NONE]),
