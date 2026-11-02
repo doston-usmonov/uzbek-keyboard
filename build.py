@@ -19,8 +19,9 @@ NONE = None
 
 # Har bir tugma: (skan-kod, Windows VK, XKB nomi, caps_lock_ta'sir_qiladimi,
 #                 [oddiy, Shift, AltGr, AltGr+Shift])
-# Asos -- US QWERTY. Yangi harflar (Ğ Ö Ş Ç) to'g'ridan-to'g'ri [ ] ; ' tugmalarida,
-# tutuq belgisi ʼ esa ` tugmasida. Siljigan belgilar AltGr qatlamida.
+# Asos -- US QWERTY. Yangi alifboda W va C yo'q, shuning uchun Ş va Ç shu tugmalarda,
+# Ğ va Ö [ ] tugmalarida, tutuq belgisi ʼ esa ` tugmasida. Siljigan belgilar
+# (w c [ ] { } `) AltGr qatlamida. Tinish belgilari US tartibidagi joyida.
 KEYS = [
     # --- Raqamlar qatori ---
     (0x29, "OEM_3", "TLDE", False, ["ʼ", "'", "`", "~"]),
@@ -38,7 +39,7 @@ KEYS = [
     (0x0D, "OEM_PLUS", "AE12", False, ["=", "+", NONE, NONE]),
     # --- Yuqori qator ---
     (0x10, "Q", "AD01", True, ["q", "Q", NONE, NONE]),
-    (0x11, "W", "AD02", True, ["w", "W", NONE, NONE]),
+    (0x11, "W", "AD02", True, ["ş", "Ş", "w", "W"]),
     (0x12, "E", "AD03", True, ["e", "E", "€", NONE]),
     (0x13, "R", "AD04", True, ["r", "R", NONE, NONE]),
     (0x14, "T", "AD05", True, ["t", "T", NONE, NONE]),
@@ -60,18 +61,18 @@ KEYS = [
     (0x24, "J", "AC07", True, ["j", "J", NONE, NONE]),
     (0x25, "K", "AC08", True, ["k", "K", NONE, NONE]),
     (0x26, "L", "AC09", True, ["l", "L", NONE, NONE]),
-    (0x27, "OEM_1", "AC10", True, ["ş", "Ş", ";", ":"]),
-    (0x28, "OEM_7", "AC11", True, ["ç", "Ç", "'", '"']),
+    (0x27, "OEM_1", "AC10", False, [";", ":", NONE, NONE]),
+    (0x28, "OEM_7", "AC11", False, ["'", '"', NONE, NONE]),
     # --- Pastki qator ---
     (0x2C, "Z", "AB01", True, ["z", "Z", NONE, NONE]),
     (0x2D, "X", "AB02", True, ["x", "X", NONE, NONE]),
-    (0x2E, "C", "AB03", True, ["c", "C", "ç", "Ç"]),
+    (0x2E, "C", "AB03", True, ["ç", "Ç", "c", "C"]),
     (0x2F, "V", "AB04", True, ["v", "V", NONE, NONE]),
     (0x30, "B", "AB05", True, ["b", "B", NONE, NONE]),
     (0x31, "N", "AB06", True, ["n", "N", NONE, NONE]),
     (0x32, "M", "AB07", True, ["m", "M", NONE, NONE]),
-    (0x33, "OEM_COMMA", "AB08", False, [",", ";", "<", NONE]),
-    (0x34, "OEM_PERIOD", "AB09", False, [".", ":", ">", NONE]),
+    (0x33, "OEM_COMMA", "AB08", False, [",", "<", NONE, NONE]),
+    (0x34, "OEM_PERIOD", "AB09", False, [".", ">", NONE, NONE]),
     (0x35, "OEM_2", "AB10", False, ["/", "?", NONE, NONE]),
     (0x56, "OEM_102", "LSGT", False, ["\\", "|", NONE, NONE]),
 ]
@@ -287,7 +288,7 @@ MAC_CODES = {
 
 # Cmd va Ctrl bilan tugmalar US belgilarini beradi, shunda Cmd+[ kabi
 # qisqa yo'llar ishlayveradi.
-MAC_US_BASE = {"TLDE": "`", "AD11": "[", "AD12": "]", "AC10": ";", "AC11": "'"}
+MAC_US_BASE = {"TLDE": "`", "AD02": "w", "AD11": "[", "AD12": "]", "AB03": "c"}
 
 # Harfdan tashqari tugmalar: barcha qatlamlarda bir xil.
 MAC_SPECIAL = {

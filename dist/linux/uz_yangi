@@ -18,7 +18,7 @@ xkb_symbols "basic" {
     key <AE11> { [ minus, underscore, emdash, endash ] };
     key <AE12> { [ equal, plus, NoSymbol, NoSymbol ] };
     key <AD01> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ q, Q, NoSymbol, NoSymbol ] };
-    key <AD02> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ w, W, NoSymbol, NoSymbol ] };
+    key <AD02> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ scedilla, Scedilla, w, W ] };
     key <AD03> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ e, E, EuroSign, NoSymbol ] };
     key <AD04> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ r, R, NoSymbol, NoSymbol ] };
     key <AD05> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ t, T, NoSymbol, NoSymbol ] };
@@ -39,17 +39,17 @@ xkb_symbols "basic" {
     key <AC07> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ j, J, NoSymbol, NoSymbol ] };
     key <AC08> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ k, K, NoSymbol, NoSymbol ] };
     key <AC09> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ l, L, NoSymbol, NoSymbol ] };
-    key <AC10> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ scedilla, Scedilla, semicolon, colon ] };
-    key <AC11> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ ccedilla, Ccedilla, apostrophe, quotedbl ] };
+    key <AC10> { [ semicolon, colon, NoSymbol, NoSymbol ] };
+    key <AC11> { [ apostrophe, quotedbl, NoSymbol, NoSymbol ] };
     key <AB01> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ z, Z, NoSymbol, NoSymbol ] };
     key <AB02> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ x, X, NoSymbol, NoSymbol ] };
-    key <AB03> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ c, C, ccedilla, Ccedilla ] };
+    key <AB03> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ ccedilla, Ccedilla, c, C ] };
     key <AB04> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ v, V, NoSymbol, NoSymbol ] };
     key <AB05> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ b, B, NoSymbol, NoSymbol ] };
     key <AB06> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ n, N, NoSymbol, NoSymbol ] };
     key <AB07> { type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC", [ m, M, NoSymbol, NoSymbol ] };
-    key <AB08> { [ comma, semicolon, less, NoSymbol ] };
-    key <AB09> { [ period, colon, greater, NoSymbol ] };
+    key <AB08> { [ comma, less, NoSymbol, NoSymbol ] };
+    key <AB09> { [ period, greater, NoSymbol, NoSymbol ] };
     key <AB10> { [ slash, question, NoSymbol, NoSymbol ] };
     key <LSGT> { [ backslash, bar, NoSymbol, NoSymbol ] };
 

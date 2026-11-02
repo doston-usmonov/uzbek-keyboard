@@ -5,8 +5,9 @@
 2026-yil 21-oktyabrdagi O'RQ-1184 qonuni bilan tasdiqlangan yangi alifbo uchun klaviatura tartibi.
 Alifbo: **A B Ç D E F G Ğ H I J K L M N O Ö P Q R S Ş T U V X Y Z** va tutuq belgisi **ʼ**.
 
-Asos sifatida US QWERTY olingan, shuning uchun lotin harflari (C va W ham) odatdagi joyida.
-Yangi harflar alohida tugmalarda turadi, AltGr bilan ham yozish mumkin.
+Asos sifatida US QWERTY olingan, tinish belgilari ham odatdagi joyida.
+Yangi alifboda W va C harflari yo'q, shuning uchun Ş va Ç shu tugmalarda turadi, Ğ va Ö esa `[` `]` tugmalarida.
+Lotin w va c AltGr bilan yoziladi.
 
 ## Yuklab olish
 
@@ -30,16 +31,16 @@ APK'ni o'rnatish uchun telefonda noma'lum manbalardan ilova o'rnatishga ruxsat b
 │ ʼ ` │ 1   │ 2 " │ 3 № │ 4   │ 5   │ 6   │ 7   │ 8   │ 9 « │ 0 » │ - — │ =   │
 └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
    ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
-   │ Q   │ W   │ E   │ R   │ T   │ Y   │ U   │ I   │ O Ö │ P   │ Ğ { │ Ö } │ |   │
-   │ q   │ w   │ e € │ r   │ t   │ y   │ u   │ i   │ o ö │ p   │ ğ [ │ ö ] │ \   │
+   │ Q   │ Ş W │ E   │ R   │ T   │ Y   │ U   │ I   │ O Ö │ P   │ Ğ { │ Ö } │ |   │
+   │ q   │ ş w │ e € │ r   │ t   │ y   │ u   │ i   │ o ö │ p   │ ğ [ │ ö ] │ \   │
    └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
      ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
-     │ A   │ S Ş │ D   │ F   │ G Ğ │ H   │ J   │ K   │ L   │ Ş : │ Ç " │
-     │ a   │ s ş │ d   │ f   │ g ğ │ h   │ j   │ k   │ l   │ ş ; │ ç ' │
+     │ A   │ S Ş │ D   │ F   │ G Ğ │ H   │ J   │ K   │ L   │ :   │ "   │
+     │ a   │ s ş │ d   │ f   │ g ğ │ h   │ j   │ k   │ l   │ ;   │ '   │
      └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
         ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
-        │ Z   │ X   │ C Ç │ V   │ B   │ N   │ M   │ ;   │ :   │ ?   │
-        │ z   │ x   │ c ç │ v   │ b   │ n   │ m   │ , < │ . > │ /   │
+        │ Z   │ X   │ Ç C │ V   │ B   │ N   │ M   │ <   │ >   │ ?   │
+        │ z   │ x   │ ç c │ v   │ b   │ n   │ m   │ ,   │ .   │ /   │
         └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
 ```
 
@@ -51,22 +52,20 @@ AltGr — o'ng Alt tugmasi (Windows'da Ctrl+Alt ham ishlaydi, macOS'da Option �
 | Tugma | Oddiy | Shift | AltGr | AltGr+Shift |
 |---|---|---|---|---|
 | `` ` `` | ʼ (tutuq, U+02BC) | ' | ` | ~ |
+| `W` | ş | Ş | w | W |
+| `C` | ç | Ç | c | C |
 | `[` | ğ | Ğ | [ | { |
 | `]` | ö | Ö | ] | } |
-| `;` | ş | Ş | ; | : |
-| `'` | ç | Ç | ' | " |
-| `,` | , | ; | < | |
-| `.` | . | : | > | |
 
 Qo'shimcha AltGr belgilari:
-- `AltGr+S/G/O/C` — ş ğ ö ç (Shift bilan bosh harflar)
+- `AltGr+S/G/O` — ş ğ ö (Shift bilan bosh harflar)
 - `AltGr+9/0` — « »
 - `AltGr+-` — — (Shift bilan –)
 - `AltGr+2` — "
 - `AltGr+3` — №
 - `AltGr+E` — €
 
-Caps Lock yangi harflarga ham ta'sir qiladi.
+Caps Lock yangi harflarga ham ta'sir qiladi. Windows va macOS'da Ctrl+C, Ctrl+W kabi qisqa yo'llar odatdagidek ishlaydi.
 
 ## O'rnatish
 
@@ -92,7 +91,7 @@ O'rnatish fayllarini o'zingiz yig'moqchi bo'lsangiz:
 2. MSKLC'da **File → Load Source File** orqali `dist/windows/uz_yangi.klc` ni oching.
 3. **Project → Build DLL and Setup Package** ni bosing. Paket `Documents\uzyangi\` papkasiga tushadi.
 
-**Validate Layout** chiqaradigan "already defined more than once" va "not in the default system code page" ogohlantirishlari xavfsiz. Ba'zi harflar ataylab ikki joyda turibdi (masalan, ş `;` tugmasida ham, AltGr+S da ham).
+**Validate Layout** chiqaradigan "already defined more than once" va "not in the default system code page" ogohlantirishlari xavfsiz. Ba'zi harflar ataylab ikki joyda turibdi (masalan, ş W tugmasida ham, AltGr+S da ham).
 
 ### Linux (X11)
 
@@ -121,7 +120,7 @@ cp dist/macos/uz_yangi.keylayout ~/Library/Keyboard\ Layouts/
 2. **System Settings → Keyboard → Text Input → Edit… → +** ni bosing.
 3. **Others** bo'limidan "Oʻzbek (yangi lotin, 2026)" ni tanlang.
 
-Cmd va Ctrl bilan ishlaydigan qisqa yo'llar US tartibidagidek qoladi: masalan, `Cmd+[` "orqaga" vazifasini bajaraveradi.
+Cmd va Ctrl bilan ishlaydigan qisqa yo'llar US tartibidagidek qoladi: masalan, `Cmd+C` nusxalaydi, `Cmd+[` esa "orqaga" vazifasini bajaraveradi.
 
 ## Telefon (Android va iOS)
 
