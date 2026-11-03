@@ -85,11 +85,20 @@ Busiz Windows yangi tartibga o'tmay qotib qoladi va eski tilga qaytadi.
 
 Ro'yxatda tartib "Oʻzbek (yangi lotin, 2026)" emas, "Uzbek (Latin)" deb ko'rinadi: tilda bitta tartib bo'lsa, Windows til nomini ko'rsatadi.
 
+#### Yangi versiyaga o'tish
+
+1. **Win+Space** bilan boshqa tilga o'ting.
+2. **Settings → Apps → Installed apps** bo'limida "Oʻzbek (yangi lotin, 2026)" ni toping va **⋯ → Uninstall** ni bosing.
+3. Yangi versiyaning `setup.exe` faylini ishga tushiring.
+4. Kompyuterni qayta ishga tushiring (**Restart**). Bu safar `ctfmon` buyrug'i yetmaydi: Windows qayta yoqilmaguncha eski tartib ishlayveradi.
+
 O'rnatish fayllarini o'zingiz yig'moqchi bo'lsangiz:
 
 1. Microsoft saytidan **Microsoft Keyboard Layout Creator 1.4** (MSKLC) ni yuklab, o'rnating.
 2. MSKLC'da **File → Load Source File** orqali `dist/windows/uz_yangi.klc` ni oching.
 3. **Project → Build DLL and Setup Package** ni bosing. Paket `Documents\uzyangi\` papkasiga tushadi.
+
+Tartib kompyuterda o'rnatilgan bo'lsa, MSKLC "The keyboard name 'uzyangi' is already in use" xatosini beradi va paketni yig'maydi. Avval tartibni olib tashlang (yuqoridagi 1–2-qadamlar).
 
 **Validate Layout** chiqaradigan "already defined more than once" va "not in the default system code page" ogohlantirishlari xavfsiz. Ba'zi harflar ataylab ikki joyda turibdi (masalan, ş W tugmasida ham, AltGr+S da ham).
 
